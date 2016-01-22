@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: subscription_production
-  username: subscription
+  username: ubuntu
   password: <%= ENV['SUBSCRIPTION_DATABASE_PASSWORD'] %>
