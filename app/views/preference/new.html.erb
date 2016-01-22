@@ -1,0 +1,281 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link href="//www.fuelcdn.com/fuelux/3.13.0/css/fuelux.min.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//www.fuelcdn.com/fuelux/3.13.0/js/fuelux.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/assets/stylesheets/creative.css">
+<div class="fuelux">
+	<div class="wizard" data-initialize="wizard" id="myWizard">
+		<div class="steps-container">
+			<ul class="steps">
+				<li data-step="1" data-name="campaign" class="active">
+					<span class="badge">1</span>Flavor Profile
+					<span class="chevron"></span>
+				</li>
+				<li data-step="2">
+					<span class="badge">2</span>Activities
+					<span class="chevron"></span>
+				</li>
+				<li data-step="3">
+					<span class="badge">3</span>Strain
+					<span class="chevron"></span>
+				</li>			
+				<li data-step="4">
+					<span class="badge">4</span>Frequency
+					<span class="chevron"></span>
+				</li>			
+				<li data-step="5">
+					<span class="badge">5</span> Specific Needs
+					<span class="chevron"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="actions">
+			<button type="button" class="btn btn-default btn-prev">
+				Prev</button>
+			<button type="button" class="btn btn-primary btn-next" data-last="Complete">Next
+			</button>
+		</div>
+		<form action="/preference/create" method="post" id="subscription-form">
+			<!-- <input name="authenticity_token" type="hidden" value="token_value"> -->
+			<div class="step-content">
+				<div class="step-pane active" data-step="1">
+					<h4>Which flavors do you prefer?</h4>
+					<div class="flavor-preference">
+						<div class="col-sm-12">
+							<label class="frequency">
+								<input type="checkbox" class="preferences-checkbox" name="preference[sweet]" value="true">
+								<div class="subscription-option">
+									<img src="assets/preference/gummy_bears.jpg" width="180" height="180"><br>
+									<h4 class="question-header">
+										Sweet
+									</h4>
+								</div>
+							</label>
+							<label class='frequency'>
+								<input type="checkbox" class="preferences-checkbox" name="preference[mint]" value="true">
+								<div class="subscription-option">
+									<img src="assets/preference/mint.jpg" width="180" height="180"><br>
+									<h4 class="question-header">
+										Mint
+									</h4>
+								</div>
+							</label>
+							<label class='frequency'>
+								<input type="checkbox" class="preferences-checkbox" name="preference[salty]" value="true">
+								<div class="subscription-option">
+									<img src="assets/preference/Soft-Pretzels.jpg" width="180" height="180"><br>
+									<h4 class="question-header">
+										Salty
+									</h4>
+								</div>
+							</label>
+							<label class='frequency'>
+								<input type="checkbox" class="preferences-checkbox" name="preference[milk_chocolate]" value="true">
+								<div class="subscription-option">
+									<img src="assets/preference/milk-chocolate.jpg" width="180" height="180"><br>
+									<h4 class="question-header">
+										Milk Chocolate
+									</h4>
+								</div>
+							</label>
+						</div>
+						<div class="col-sm-12">
+							<label class='frequency'>
+								<input type="checkbox" class="preferences-checkbox" name="preference[dark_chocolate]" value="true">
+								<div class="subscription-option">
+									<img src="assets/preference/dark-chocolate.jpg" width="180" height="180"><br>
+									<h4 class="question-header">
+										Dark Chocolate
+									</h4>
+								</div>
+							</label>
+							<label class='frequency'>
+								<input type="checkbox" class="preferences-checkbox" name="preference[caramel]" value="true">
+								<div class="subscription-option">
+									<img src="assets/preference/caramel.jpg" width="180" height="180"><br>
+									<h4 class="question-header">
+										Caramel
+									</h4>
+								</div>
+							</label>
+							<label class='frequency'>
+								<input type="checkbox" class="preferences-checkbox" name="preference[nuts]" value="true">
+								<div class="subscription-option">
+									<img src="assets/preference/nuts.png" width="180" height="180"><br>
+									<h4 class="question-header">
+										Nuts
+									</h4>
+								</div>
+							</label>
+							<label class='frequency'>
+								<input type="checkbox" class="preferences-checkbox" name="preference[fruity]" value="true">
+								<div class="subscription-option">
+									<img src="assets/preference/fruity.jpg" width="180" height="180"><br>
+									<h4 class="question-header">
+										Fruity
+									</h4>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="step-pane sample-pane" data-step="2">
+					<h4>What activities do you like to do?</h4>
+					<div class="col-sm-12">
+						<label class='frequency'>
+							<input type="checkbox" class="preferences-checkbox" name="preference[adventuring]" value="true">
+							<div class="subscription-option subscription-activities">
+								<img src="assets/preference/camping.jpg" width="180" height="180"><br>
+								<h4 class="question-header">
+									Adventuring
+								</h4>
+							</div>
+						</label>
+						<label class='frequency'>
+							<input type="checkbox" class="preferences-checkbox" name="preference[video_games]" value="true">
+							<div class="subscription-option subscription-activities">
+								<img src="assets/preference/video_games.jpg" width="180" height="180"><br>
+								<h4 class="question-header">
+									Video Games
+								</h4>
+							</div>
+						</label>
+						<label class='frequency'>
+							<input type="checkbox" class="preferences-checkbox" name="preference[socializing]" value="true">
+							<div class="subscription-option subscription-activities">
+								<img src="assets/preference/socializing.jpg" width="180" height="180"><br>
+								<h4 class="question-header">
+									Socializing
+								</h4>
+							</div>
+						</label>
+					</div>
+					<div class="col-sm-12">
+						<label class='frequency'>
+							<input type="checkbox" class="preferences-checkbox" name="preference[eating]" value="true">
+							<div class="subscription-option subscription-activities">
+								<img src="assets/preference/eating.jpg" width="180" height="180"><br>
+								<h4 class="question-header">
+									Eating
+								</h4>
+							</div>
+						</label>
+						<label class='frequency'>
+							<input type="checkbox" class="preferences-checkbox" name="preference[music]" value="true">
+							<div class="subscription-option subscription-activities">
+								<img src="assets/preference/music.jpg" width="180" height="180"><br>
+								<h4 class="question-header">
+									Music
+								</h4>
+							</div>
+						</label>
+						<label class='frequency'>
+							<input type="checkbox" class="preferences-checkbox" name="preference[movies]" value="true">
+							<div class="subscription-option subscription-activities">
+								<img src="assets/preference/movies.jpg" width="180" height="180"><br>
+								<h4 class="question-header">
+									Movies
+								</h4>
+							</div>
+						</label>
+					</div>
+				</div>
+				<div class="step-pane sample-pane" data-step="3">
+					<h4>What are your favorite strains?</h4>
+
+					<label class="frequency">
+						<input type="radio" name="preference[Strain]" value="Indica">
+					<div>
+							<img src="assets/preference/GDP.jpeg" width="225" height="300">
+							<h4 class="question-header">
+								Grand Daddy Purp (Indica)
+							</h4>
+					</div>
+					</label>
+					<label class="frequency">
+						<input type="radio" name="preference[Strain]" value="Sativa">
+						<div>
+							<img src="assets/preference/blue_dream.jpg" width="225" height="300">
+							<h4 class="question-header">
+								Blue Dream (sativa)
+							</h4>
+						</div>
+					</label>
+					<label class="frequency">
+						<input type="radio" name="preference[Strain]" value="Hybrid">
+						<div>
+							<img src="assets/preference/girl_scout.jpg" width="225" height="300">
+							<h4 class="question-header">
+								Girl Scout (Hybrid)
+							</h4>
+						</div>
+					</label>
+				</div>
+				<div class="step-pane sample-pane" data-step="4">
+					<h4>How often do you smoke?</h4>
+					<!-- <div class="subscription-option subscription-activities"> -->
+					<label class="frequency">
+						<input type="radio" name="preference[frequency]" value="everyday">
+						<div>
+							<img src="assets/preference/bong1.jpg" width="225" height="300">
+							<h4 class="question-header">
+								1-2 times a day
+							</h4>
+						</div>
+					</label>
+					<!-- </div> -->
+					<!-- <div class="subscription-option subscription-activities"> -->
+					<label class="frequency">
+						<input type="radio" name="preference[frequency]" value="often">
+						<div>
+							<img src="assets/preference/bong2.jpg" width="225" height="300">
+							<h4 class="question-header">
+								Often
+							</h4>
+						</div>
+					</label>
+					<!-- </div> -->
+					<!-- <div class="subscription-option subscription-activities"> -->
+					<label class="frequency">
+						<input type="radio" name="preference[frequency]" value="occasionally">
+						<div>
+							<img src="assets/preference/bong3.jpg" width="225" height="300">
+							<h4 class="question-header">
+								Occasionally
+							</h4>
+						</div>
+					</label>
+					<!-- </div> -->
+				</div>
+				<div class="step-pane sample-pane" data-step="5">
+					<h4>Would you like to address any specific needs?</h4>
+					<label class="btn btn-default specific-needs">
+							<input type="checkbox" class="preferences-checkbox" name="preference[anxiety]" value="true">
+							Anxiety
+					</label>
+					<label class="btn btn-default specific-needs">
+							<input type="checkbox" class="preferences-checkbox" name="preference[sleep]" value="true">
+							Sleep
+					</label>
+					<label class="btn btn-default specific-needs">
+							<input type="checkbox" class="preferences-checkbox" name="preference[pain]" value="true">
+							Pain
+					</label>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(window).load(function(){
+	$('#myWizard').wizard()
+	});
+	$(".specific-needs").children().click(function(){
+		$( this ).parent().toggleClass("btn-success");
+	});
+	$('#myWizard').on('finished.fu.wizard', function(){
+		$("#subscription-form").submit();
+	});
+</script>

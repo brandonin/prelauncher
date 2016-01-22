@@ -1,0 +1,334 @@
+.navbar, .navbar-default {
+	margin-bottom: 0px;
+	background-color: lightgreen;
+}
+.background-image{
+	background-image: url(green.png);
+}
+.green{
+	color: green;
+}
+/*.carousel-images{
+	width:max;
+}*/
+.logged_in_user_padding{
+	padding: 15px;
+}
+.small{
+	height:30px;
+	width:30px;
+	padding-top: 15px;
+}
+.white{
+	color: white!important;
+  cursor:pointer;
+}
+<!--slider-->
+.jk-slider{
+    width:100%;
+}
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    width: 475px;
+    /*border: 1px solid white;*/
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    color: #fff;
+    text-align: left;
+    /*text-transform: uppercase;*/
+    font-family: helvetica;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  /*color: black;*/
+
+
+}
+.hero1{
+      top: 25%;
+    left: 75%;
+
+}
+.hero2{
+      top: 12%;
+    left: 55%;
+
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.hero p {
+  font-size: 16px;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+.btn-carousel{
+  background-color:#5bc0de;
+}
+#main{
+  background-color: #f7f5f2;
+  min-height: 500px;
+}
+#products{
+  background-color: white;
+  min-height: 500px;
+}
+.wrapper{
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+.login-reg-container{
+  position: relative;
+  background-color: white;
+  margin: 32px auto;
+  max-width: 525px;
+  padding: 32px;
+}
+.login-form{
+  max-width: 310px;
+  margin: 0 auto;
+}
+.login-reg-container h2{
+  margin-top: 0%;
+}
+.customer-title{
+  color:#565253;
+}
+.form-label{
+  font-weight: 400;
+}
+.input-border{
+  border: 1px solid black;
+  border-radius: 0px;
+}
+.btn-sharp{
+  border-radius: 0px;
+  margin-right:5px;
+  text-transform: uppercase;
+}
+.gray{
+  color: gray;
+}
+.register-form{
+  max-width: 280px;
+  margin: 0 auto;
+}
+.fixed-font{
+  font-size: 16px;
+}
+.circle{
+  border-radius: 9px;
+  background-color:orange;
+  color:white;
+  padding: 1px 5px;
+  line-height: 1;
+}
+.outside{
+  border:outset;
+}
+.wrapper-cart{
+  background-color: white;
+}
+.margin-top-btn{
+  margin-top:20px;
+}
+.footer{
+  background-color:teal;
+  min-height:200px;
+}
+.footer-left{
+  display: inline-block;
+}
+.footer-left a {
+    color:lightgray!important;
+}
+.footer-right{
+  display: inline-block;
+  border-left: 2px solid lightgray;
+  padding-left: 20px;
+    min-height:150px;
+}
+.footer-right *{
+      color: lightgray!important;
+
+}
+.footer-text-padding{
+  padding-top: 10px;
+}
+.footer-padding{
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+.navbar a:hover, .modal-cursor:hover{
+  background-color: transparent!important;
+  color: orange!important;
+  text-decoration: none;
+}
+.footer a:hover{
+  background-color: transparent!important;
+  color: green!important;
+  text-decoration: none;
+}
+.modal-cursor{
+  cursor: auto;
+}
+.footer-p{
+}
+.inline{
+  display: inline-block;
+  vertical-align: top;
+}
+.product-box{
+  width:320px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding:10px;
+}
+.product-description{
+text-align: left!important;
+}
+.no-text-decoration:hover{
+  text-decoration: none;
+  color:black;
+  background-color: transparent;
+}
+.inline-creator * {
+  display: inline-block;
+  vertical-align: top;
+}
+.inline-show-product-image{
+  display: inline-block;
+  vertical-align: top;
+  max-width:450px;
+}.inline-show-product-description{
+  display: inline-block;
+  vertical-align: top;
+  max-width:400px;
+}
+.product-background{
+  background-color: white;
+}
+.product-image-max-height{
+  max-height:450px;
+}
+.float-right{
+  float:right;
+}
+.age-verify{
+  text-align: center;
+  background-color: rgba(255,255,255,.8);
+}
+.age-verification{
+    position: relative;
+  background-color: darkgreen;
+  opacity: .9;
+  margin: 32px auto;
+  max-width: 525px;
+  padding: 32px;
+  color:white;
+}
+.legal{
+  padding:0 80px;
+  font-size: 8px;
+  font-weight: bold;
+}
+.flavor-preference{
+  /*text-align: center; */
+}
+.selected-preference{
+  border:2px solid rgba(44,190,90, .9)!important;
+}
+.selected-preference h4{
+  background-color: rgba(44,190,90, .9);
+  color:white;
+}
+.question-header{
+  padding: 8px;
+  font-size: 14px;
+  font-family: helvetica;
+  margin:5px 0px 0px 0px;
+}
+/*.subscription-option{
+  padding:0px;
+  margin-bottom: 10px;
+  margin-right:5px;
+  display: inline-block;
+  vertical-align: top;
+  border:2px solid transparent;
+}*/
+.subscription-option img{
+  padding:7px;
+}
+.step-content{
+  text-align: center;
+}
+.subscription-activities{
+  margin: 5px 20px;
+}
+.frequency{
+  display: inline-block;
+}
+
+.frequency > input{
+  visibility: hidden;
+  position: absolute;
+}
+.frequency > input + div{
+  cursor:pointer;
+  padding:0px;
+  margin-bottom: 10px;
+  margin-right:5px;
+  display: inline-block;
+  vertical-align: top;
+  border:2px solid transparent;
+}
+.frequency > input:checked + div{
+    border:2px solid rgba(44,190,90, .9)!important;
+}
+.frequency > input:checked + div > h4{
+  background-color: rgba(44,190,90, .9);
+  color:white;
+}
+.frequency img {
+  padding:7px;
+}
+.specific-needs > input{
+  visibility: hidden;
+  position: absolute;
+}
+.specific-needs > input:checked + div{
+  background-color: green;
+}

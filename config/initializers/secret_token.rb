@@ -1,0 +1,1 @@
+Prelaunchr::Application.config.secret_key_base = 'aa74c64334501aab8a02ec6a66ff507f45b81b31ca5b75a61746146df8e123c2f15d3da28b7b970cf9d79ffdbb8783facb2b338c162fe226a1aafb4b36937151'

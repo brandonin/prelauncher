@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sweet: false
+  mint: false
+  salty: false
+  milk_chocolate: false
+  dark_chocolate: false
+  caramel: false
+  nuts: false
+  fruity: false
+  video_games: false
+  socializing: false
+  eating: false
+  music: false
+  movies: false
+  indica: false
+  sative: false
+  hybrid: false
+  frequency: MyString
+  anxiety: false
+  sleep: false
+  pain: false
+
+two:
+  sweet: false
+  mint: false
+  salty: false
+  milk_chocolate: false
+  dark_chocolate: false
+  caramel: false
+  nuts: false
+  fruity: false
+  video_games: false
+  socializing: false
+  eating: false
+  music: false
+  movies: false
+  indica: false
+  sative: false
+  hybrid: false
+  frequency: MyString
+  anxiety: false
+  sleep: false
+  pain: false

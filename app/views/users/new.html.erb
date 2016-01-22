@@ -1,0 +1,23 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div class="hero">
+    <p class="large header-text caviar">High Standards have arrived</p>
+    <p class="small caviar paragraph-text">A personalized edible collection just for you.</p>
+</div>
+
+<div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+    <% if Rails.application.config.ended %>
+        <p class="thanks caviar">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
+        <p class="compiling caviar">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS WITHIN THE WEEK</p>
+        <!-- <p class="go-to caviar">In the meantime, head to  <a href="http://www.harrys.com/">WWW.HARRYS.COM</a></p> -->
+        <p class="again caviar">Thank You Again!</p>
+    <% else %>
+        <div class="key"></div>
+        <p class="byline caviar">Be the first to open it & get free glass</p>
+        <p id="notice"><%= notice %></p>
+        <%= form_for @user, :url => { :action => "create" } do |f| %>
+            <%= f.text_field :email, :placeholder => "Enter Email", :class => "email caviar" %>
+            <input class="submit brandon" name="commit" type="submit" value="take a peek" />
+        <% end %>
+    <% end %>
+</div>
