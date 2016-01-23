@@ -707,10 +707,15 @@ html.home{
 		background: image-url("refer/caret-selected@2x.png") center center no-repeat;
 		background-size: 16px 10px;
 	}*/
+
+	#home .hero{
+		margin: 0px auto;
+	}
 	.box-image{
 		width:320px;
 		height:233px;
 		background-size: 320px 233px;
+		margin: 0px auto;
 	}
 	#home .form-wrap .submit{
 		border-radius: 0px;
