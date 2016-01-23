@@ -106,6 +106,7 @@ GEM
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
     hike (1.2.3)
+    hirb (0.7.3)
     i18n (0.7.0)
     jquery-rails (4.0.3)
       rails-dom-testing (~> 1.0)
@@ -214,6 +215,7 @@ DEPENDENCIES
   delayed_job_active_record (~> 4.0.3)
   devise
   dotenv-rails
+  hirb
   inherited_resources!
   pg
   rails (= 4.2.0)

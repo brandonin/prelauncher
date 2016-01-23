@@ -30,4 +30,6 @@ group :production do
   gem 'rails_serve_static_assets'
 end
 
+gem "hirb"
+
 # gem "sendgrid"
