@@ -38,17 +38,17 @@ html.home{
 }
 
 #home .page-content{
-	width: 1400px;
-	margin: 0 auto;
+	/*width: 1400px;*/
+	/*margin: 	0 auto;*/
 }
 
 #home .hero{
 	width: 100%;
-	height: 446px;
+	/*height: 600px;*/
 	/*background: image-url("home/logo.jpeg") center center no-repeat;*/
-	background-size: 1600px 600px;
+	/*background-size: 1800px 600px;*/
 	overflow: hidden;
-	position: relative;
+	/*position: relative;*/
 	letter-spacing: .09em;
 	margin: 0 auto;
 	text-align: center;
@@ -78,6 +78,9 @@ html.home{
 	z-index: 2;
 	letter-spacing: 2px;
 }
+.box-image{
+	margin-top: 40px;
+}
 
 #home .hero .small{
 	font-weight: bold;
@@ -95,7 +98,8 @@ html.home{
 #home .form-wrap{
 	/*height: 80px;*/
 	width: 411px;
-	margin: 4em auto 0;
+	margin: 0 auto;
+	margin-top:40px;
 }
 
 #home .form-wrap .key{
