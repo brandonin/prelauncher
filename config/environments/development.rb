@@ -69,6 +69,8 @@ Prelaunchr::Application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { :host => ENV['DEFAULT_MAILER_HOST'] }
+  config.action_mailer.asset_host = 'http://localhost:3000'
+
   config.serve_static_files = true
   # config.serve_static_assets = true
   config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
