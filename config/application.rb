@@ -41,6 +41,7 @@ module Prelaunchr
 
     config.assets.debug = false
     config.action_mailer.default_options = { from: "info@gethighstandards.com" }
+    config.action_mailer.default_url_options = { from: "info@gethighstandards.com" }
     # Use SQL instead of Active Record's schema dumper when creating the database.
     # This is necessary if your schema can't be completely dumped by the schema dumper,
     # like if you have constraints or database-specific column types

@@ -1,23 +1,30 @@
 Prelaunchr::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
   # Code is not reloaded between requests
-  config.cache_classes = true
+  config.cache_classes = false
+  config.whiny_nils = true
 
   # Full error reports are disabled and caching is turned on
-  config.consider_all_requests_local       = false
-  config.action_controller.perform_caching = true
+  config.consider_all_requests_local       = true
+  config.action_controller.perform_caching = false
+  config.active_support.deprecation = :log
+  config.action_dispatch.best_standards_support = :builtin
 
-  config.eager_load = true
+
+  config.eager_load = false
 
   # Compress JavaScripts and CSS
-  config.assets.compress = true
+  config.assets.compress = false
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true
+
+  config.assets.debug = true
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
@@ -59,7 +66,8 @@ Prelaunchr::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
-
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { :host => ENV['DEFAULT_MAILER_HOST'] }
   config.serve_static_files = true
   # config.serve_static_assets = true
