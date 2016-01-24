@@ -71,16 +71,7 @@ Rails.application.configure do
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
-
-  ActionMailer::Base.smtp_settings = {
-  :user_name => 'highstandards',
-  :password => '9Gj@^&5SU7:Mkh?Z',
-  :domain => 'gethighstandards.com',
-  :address => 'smtp.sendgrid.net',
-  :port => 587,
-  :authentication => :plain,
-  :enable_starttls_auto => true
-}
+  config.active_job.queue_adapter = :delayed_job
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
