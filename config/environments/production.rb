@@ -13,7 +13,7 @@ Rails.application.configure do
 
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { :host => ENV['HOST_DEFAULT_URL'] }
+  config.action_mailer.default_url_options = { :host => ENV['DEFAULT_MAILER_HOST'] }
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
@@ -71,6 +71,16 @@ Rails.application.configure do
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
+
+  ActionMailer::Base.smtp_settings = {
+  :user_name => 'highstandards',
+  :password => '9Gj@^&5SU7:Mkh?Z',
+  :domain => 'gethighstandards.com',
+  :address => 'smtp.sendgrid.net',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+}
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
