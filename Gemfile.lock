@@ -182,6 +182,8 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
+    sendgrid (1.2.4)
+      json
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -222,6 +224,7 @@ DEPENDENCIES
   rails_12factor
   rails_serve_static_assets
   sass-rails (~> 5.0.1)
+  sendgrid
   uglifier
   unicorn
 

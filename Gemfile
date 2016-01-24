@@ -32,4 +32,4 @@ end
 
 gem "hirb"
 
-# gem "sendgrid"
+gem "sendgrid"
