@@ -1,6 +1,5 @@
 class UserMailer < ActionMailer::Base
     default from: "High Standards <info@gethighstandards.com>"
-    # include SendGrid
 
     def signup_email(user)
         @user = user
@@ -10,4 +9,4 @@ class UserMailer < ActionMailer::Base
 end
 
 mail = UserMailer.signup_email(@user)
-mail = mail.deliver_now
+mail = mail.deliver_later
