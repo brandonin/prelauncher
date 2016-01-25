@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
             'count' => 5,
             "html" => "$5 Off<br>First Box",
             "class" => "two",
-            "image" =>  ActionController::Base.helpers.asset_path("refer/glass_pipe.jpg")
+            "image" =>  ActionController::Base.helpers.asset_path("refer/package.jpg")
         },
         {
             'count' => 10,
