@@ -334,7 +334,7 @@ html.home{
 	background: image-url("refer/mammoth.png") 0 0 no-repeat;
 	background-size: 700px 500px;
 	overflow: hidden;
-	margin-top: 0px;
+	margin-top: -30px;
 	float: left;
 }
 
@@ -854,10 +854,26 @@ text-align: left!important;
   background-color: green;
 }
 
-
-
-
-
+.fb-share-button {
+	transform: scale(2.6);
+	-ms-transform: scale(2.6);
+	-webkit-transform: scale(2.6);
+	-o-transform: scale(2.6);
+	-moz-transform: scale(2.6);
+	transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-webkit-transform-origin: top left;
+	float: left;
+	margin-top: -15px;
+	margin-right: 20px;
+	/*background-position-y: -230px;*/
+   }
+.fb-share-button span{
+  height: 27px;
+  width: 27px;
+}
 
 
 
