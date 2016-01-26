@@ -276,8 +276,8 @@ html.home{
 }
 
 #refer .page-content{
-	width: 1120px;
-	margin: 0 auto;
+	min-width: 1200px;
+	margin: 0;
 	z-index: 0;
 	position: relative;
 }
@@ -327,16 +327,18 @@ html.home{
 	background: transparent;
 	height: 391px;
 	overflow: hidden;
+	text-align: center;
 }
 
 #refer .mammoth{
-	width: 612px;
-	height: 394px;
+	width: 550px;
+	height: 354px;
 	background: image-url("refer/products.png") 0 0 no-repeat;
-	background-size: 612px 394px;
+	background-size: 550px 354px;
 	overflow: hidden;
-/*	margin-top: -30px;
-*/	float: left;
+	display: inline-block;
+	margin:0px;
+	margin-right: 20px;
 }
 
 .red {
@@ -346,8 +348,9 @@ html.home{
 	font-size: 30px;
 	text-transform: uppercase;
 	font-weight: bold;
-	margin: 125px 0 0 350px;
-	display: block;
+	/*margin: 125px 0 0 350px;*/
+	margin: 0px;
+	display: inline-block;
 	line-height: 46px;
 	letter-spacing: 4px;
 	text-align: center;
@@ -356,12 +359,13 @@ html.home{
 }
 
 #refer .share-wrap{
-	float: right;
-	width: 400px;
+	/*width: 400px;*/
+	margin: 0px;
+	display: inline-block;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
-	margin-right: 60px;
+	margin-left: 20px;
 }
 
 #refer .share-wrap .why{
@@ -439,6 +443,8 @@ html.home{
 
 #refer .prizes .page-content{
 	position: relative;
+	margin-left:20px;
+	margin-right:20px;
 }
 
 #refer .prizes .callout{
