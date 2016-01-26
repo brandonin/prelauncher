@@ -74,89 +74,9 @@
     </div>
     <div id="overlay" class="fade-In"> 
         <section class="overlay-1 slide-from-bottom"> 
-        <div class="header">
-        </div>
-        <div class="hero">
-            <div class="page-content clearfix">
-                <div class="mammoth">
-        <!--             <span class="need brandon border-all">your perfect edible, <a href="/preference" class="red">Here</a>.</span> -->
 
-                </div>
-                <div class="share-wrap">
-                    <p class="why brandon">Don't leave your friends behind</p>
-                    <p class="title brandon">INVITE FRIENDS &<br>Earn Product</p>
-                    <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn awesome goods for<br>each friend who signs up.</p>
-                    <div class="copy-link black brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-                    <% twitter_message = "#Marijuana is Changing. @gtHighStandards is finding your perfect edible." %>
-                    <% facebook_message = "#Marijuana is Changing. High Standards is finding your Perfect edible." %>
-                    <div class="social-links">
-                        <div class="fb-share-button" data-href="http://gethighstandards.com/?ref=<%= @user.referral_code %>" data-layout="icon"></div>
-                        <div class="sep"></div>
-                        <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<%= render partial: "test" %>
 
-        <% 
-            referrals_count = @user.referrals.count
-
-            stops = User::REFERRAL_STEPS
-
-            found = nil
-
-            stops.reverse_each { |stop|
-                if stop["count"] <= referrals_count and !found
-                    stop["selected"] = true
-                    found = stop
-                else
-                    stop["selected"] = false
-                end
-            }   
-         %>
-        <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
-            <div class="page-content">
-                <p class="callout brandon">Here's How It Works:</p>
-                <ul class="products clearfix">
-                    <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">High Standards Product</p></li>
-                    <% stops.each do |stop| %>
-                        <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
-                            <div class="circle"><%= stop["count"] %></div>
-                            <div class="sep"></div>
-                            <p><%= stop["html"].html_safe %></p>
-
-                            <div class="tooltip">
-                                <img src="<%= stop["image"] %>" height="254">
-                            </div>
-                        </li>
-                    <% end %>
-                </ul>
-
-                <div class="progress">
-                    <div class="mover">
-                        <div class="bar clearfix"></div>
-                    </div>
-                </div>
-
-                <% 
-                    words = ''
-                    if referrals_count == 1
-                        words = 'friend has'
-                    elsif 
-                        words = 'friends have'
-                    end
-
-                %>
-
-                <% if referrals_count == 0 %>
-                    <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
-                <% else %>
-                    <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
-                <% end %>
-                <p class="check brandon">Keep checking</p>  
-                <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>
-            </div>
-        </div>
         </section> 
         <section class="overlay-2 slide-from-bottom"> 
             <div id="contact" class="content"> 
@@ -164,7 +84,7 @@
                     <div class="container"> 
                         <h1>Mission</h1> 
                         <p style="font-size: 20px;"> 
-                            High Standards will couple <span class="aqua">Data Science</span> and <span class="aqua">Customer Service </span>in order deliver the perfect products every time.<span class="aqua"> The Company </span> has made it a priority to <span class="aqua">Give Back</span> to the community and provide <span class="aqua">Inner-City Humans</span> opportunities and skills. Help us reach our goal by referring your friends.
+                            High Standards will couple <span class="aqua">Data Science</span> and <span class="aqua">Customer Service </span>to deliver the perfect products every time.<span class="aqua"> We </span> have made it a priority to <span class="aqua">Give Back</span> to the community and provide <span class="aqua">Inner-City Humans</span> opportunities and skills. Help us reach our goal by referring your friends.
                         </p>
                        
                     </div>
