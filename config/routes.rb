@@ -1,5 +1,6 @@
 Prelaunchr::Application.routes.draw do
 
+  get 'complete' => 'preference#complete'
   get 'underage' => 'age#underage'
   get 'verify_age' => 'age#verify_age'
 

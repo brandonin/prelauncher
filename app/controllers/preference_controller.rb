@@ -4,7 +4,10 @@ class PreferenceController < ApplicationController
   end
   def create
   	Preference.create(preference_params)
-  	redirect_to "/"
+    redirect_to "/complete"
+  end
+  def complete
+
   end
 
   private

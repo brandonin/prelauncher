@@ -931,3 +931,40 @@ text-align: left!important;
 .container p{
 	font-size: 20px;
 }
+.enlarge{
+	font-size: 80px;
+}
+.less-enlarge{
+	font-size: 40px;
+}
+.complete-page{
+	width:800px;
+	text-align: left;
+	/*margin: 100px 0 0 100px;*/
+	margin: 100px auto;
+}
+#complete{
+	height: 50px;
+	background: $primary-color;
+	/*background: image-url("refer/header.jpg");*/
+	width: 100%;
+	overflow:hidden;
+	z-index: 1;
+	position: relative;
+}
+#complete .header{
+	margin: 0 auto;
+	font-weight: normal;
+	font-size: 0;
+	line-height: 0;
+/*	margin-right: 14px;
+*/	letter-spacing: 1px;
+	background: image-url("refer/logo.png") 0 0 no-repeat;
+	background-size: 220px 30px;
+	height: 30px;
+	width: 220px;
+	margin-top: 10px;
+}
+.complete-button{
+	text-decoration: none;
+}
