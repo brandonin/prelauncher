@@ -1,4 +1,5 @@
 $primary-color:	#670a0a;
+$secondary-color: #1fb8b2;
 
 
 form{
@@ -282,7 +283,7 @@ html.home{
 }
 
 #refer .header{
-	height: 50px;
+	height: 25px;
 	background: $primary-color;
 /*	background: image-url("refer/header.jpg") 0 center;
 */	width: 100%;
@@ -624,7 +625,6 @@ html.home{
 	color: #858181;
 	width: 100%;
 	font-weight: 500;
-	margin-top: 5px;
 }
 
 #refer .prizes p.ship{
@@ -633,7 +633,6 @@ html.home{
 	color: #858181;
 	width: 100%;
 	font-weight: 500;
-	margin-top: 20px;
 }
 
 #refer .prizes a.policy{
@@ -918,4 +917,10 @@ text-align: left!important;
 
 .black{
 	color: black!important;
+}
+.aqua{
+	color: $secondary-color;
+}
+.container p{
+	font-size: 20px;
 }
