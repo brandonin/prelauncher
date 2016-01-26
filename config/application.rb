@@ -40,6 +40,7 @@ module Prelaunchr
     config.active_support.escape_html_entities_in_json = true
 
     config.assets.debug = false
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
     config.action_mailer.default_options = { from: "info@gethighstandards.com" }
     # config.action_mailer.default_url_options = { from: "info@gethighstandards.com" }
     # Use SQL instead of Active Record's schema dumper when creating the database.
