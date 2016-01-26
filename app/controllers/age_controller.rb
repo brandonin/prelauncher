@@ -11,4 +11,6 @@ class AgeController < ApplicationController
     }
     redirect_to "/"
   end
+  def underage
+  end
 end

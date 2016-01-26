@@ -767,19 +767,7 @@ text-align: left!important;
 .float-right{
   float:right;
 }
-.age-verify{
-  text-align: center;
-  background-color: rgba(255,255,255,.8);
-}
-.age-verification{
-    position: relative;
-  background-color: darkgreen;
-  opacity: .9;
-  margin: 32px auto;
-  max-width: 525px;
-  padding: 32px;
-  color:white;
-}
+
 .legal{
   padding:0 80px;
   font-size: 8px;
@@ -876,10 +864,10 @@ text-align: left!important;
 
 #age-verify{
 		/*background: #EDECEA;*/
-	background: image-url("refer/header.jpg") no-repeat center center fixed;
+	background: image-url("home/logo@2x.jpeg") no-repeat center center fixed;
 	  /* Set rules to fill background */
   min-height: 100%;
-  min-width: 1024px;
+  min-width: 1200px;
 	
   /* Set up proportionate scaling */
   width: 100%;
@@ -893,25 +881,41 @@ text-align: left!important;
 .age-question{
   position: fixed;
   text-transform: uppercase;
-  font-size:50px;
-  top: 35%;
+  font-size:55px;
+  top: 50%;
+  text-align: center;
   left: 50%;
+  font-family: "CaviarDreams";
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
-.age-button-grouping{
-	text-align: center;
+.age-button{
+	display: inline-block;
+	width:500px;
 }
-.age-question .age-button-grouping .yes{
+.inline{
+	display: inline-block;
+}
+.btn-mahogany{
+	background-color: $primary-color;
+	border: 1px solid $primary-color;
+	color: white;
+	height:80px;
+	width:160px;
+	border-radius: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "CaviarDreams";
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.age-question .age-button .no{
 	/*width:40px;*/
 	/*height:40px;*/
 	text-decoration: none;
 }
-.age-question .age-button-grouping .no{
-	/*width:40px;*/
-	/*height:40px;*/
-	text-decoration: none;
-}
+
 .black{
 	color: black!important;
 }
