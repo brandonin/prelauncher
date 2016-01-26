@@ -872,10 +872,17 @@ text-align: left!important;
 		/*background: #EDECEA;*/
 	background: image-url("home/logo@2x.jpeg") no-repeat center center fixed;
 	  /* Set rules to fill background */
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;	
+  min-height: 100%;
+  min-width: 1200px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .age-question{
   position: fixed;
