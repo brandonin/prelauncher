@@ -1,5 +1,9 @@
 Prelaunchr::Application.routes.draw do
 
+  get 'verify_age' => 'age#verify_age'
+
+  get 'age/verified_age'
+
   get 'preference' => 'preference#new'
   post 'preference/create' => 'preference#create'
 

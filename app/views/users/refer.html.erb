@@ -8,92 +8,201 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
- <div class="header">
-    <div class="content">
-        <p class="logo brandon">High Standards</p>
-    </div>
-</div>
+ <link rel="stylesheet" type="text/css" href="/assets/layout.css"> 
 
-<div class="hero">
-    <div class="page-content clearfix">
-        <div class="mammoth">
-<!--             <span class="need brandon border-all">your perfect edible, <a href="/preference" class="red">Here</a>.</span> -->
-
+<div class=" white pace-done">
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+          <div class="pace-progress-inner">
+          </div>
         </div>
-        <div class="share-wrap">
-            <p class="why brandon">Don't leave your friends behind</p>
-            <p class="title brandon">INVITE FRIENDS &<br>Earn Product</p>
-            <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn awesome goods for<br>each friend who signs up.</p>
-            <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-            <% twitter_message = "#Marijuana is Changing. @gtHighStandards is finding your perfect edible." %>
-            <% facebook_message = "#Marijuana is Changing. High Standards is finding your Perfect edible." %>
-            <div class="social-links">
-                <div class="fb-share-button" data-href="http://gethighstandards.com/?ref=<%= @user.referral_code %>" data-layout="icon"></div>
-                <div class="sep"></div>
-                <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
-            </div>
+        <div class="pace-activity">
         </div>
+    </div> 
+    <div id="page-load" class="remove">
     </div>
-</div>
-
-<% 
-    referrals_count = @user.referrals.count
-
-    stops = User::REFERRAL_STEPS
-
-    found = nil
-
-    stops.reverse_each { |stop|
-        if stop["count"] <= referrals_count and !found
-            stop["selected"] = true
-            found = stop
-        else
-            stop["selected"] = false
-        end
-    }   
- %>
-<div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
-    <div class="page-content">
-        <p class="callout brandon">Here's How It Works:</p>
-        <ul class="products clearfix">
-            <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">High Standards Product</p></li>
-            <% stops.each do |stop| %>
-                <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
-                    <div class="circle"><%= stop["count"] %></div>
-                    <div class="sep"></div>
-                    <p><%= stop["html"].html_safe %></p>
-
-                    <div class="tooltip">
-                        <img src="<%= stop["image"] %>" height="254">
+    <div id="main">
+        <div id="main-container" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"> 
+            <div class="bg-parallax"> 
+                <div id="bg-image" class="layer vegas-container" data-depth="0.04" style="height: 737px; position: relative; display: block; left: 0px; top: 0px; transform: translate3d(4.9344px, -2.814px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <div class="vegas-slide vegas-transition-fade vegas-transition-fade-in vegas-transition-fade-out" style="transition: all 800ms;">
+                        <div class="vegas-slide-inner" style="background-image: url(&quot;/assets/images1.jpg&quot;); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; ">
+                        </div>
                     </div>
-                </li>
-            <% end %>
-        </ul>
+                </div>
+            </div>
+        <div id="bg-overlay" style="opacity: 0.5; background: rgb(0, 0, 0);">
+        </div>
 
-        <div class="progress">
-            <div class="mover">
-                <div class="bar clearfix"></div>
+        <div id="intro" class="intro-1 show"> 
+            <div id="intro-content" class="3d-hover"> 
+                <div class="bg-effect"> 
+                    <div id="bg-effect-1" class="layer" data-depth="0.2" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(24.672px, -14.07px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                        <canvas width="1747" height="620" class="animated fadeInUp" style="opacity: 1;"></canvas>
+                    </div>
+                    <div id="bg-effect-2" class="layer" data-depth="0.14" style="position: absolute; display: none; left: 0px; top: 0px; transform: translate3d(17.2704px, -9.849px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    </div>
+                    <div id="bg-effect-3" class="layer" data-depth="0.14" style="position: absolute; display: none; left: 0px; top: 0px; transform: translate3d(17.2704px, -9.849px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    </div>
+                </div>
+                <div class="container-mid" style="display: block;"> 
+                    <div class="container animated"> 
+                        <img class="logo custom-width animated fadeInDown" src="/assets/home/favicon-white.png" alt="logo" style="opacity: 1;"> 
+                        <div class="slider" style="position: relative; overflow: hidden;">
+                            <div class="slide cycle-slide" style="position: absolute; top: 156px; left: 0px; z-index: 99; opacity: 1; display: block; visibility: hidden;"><h1 class="animated fadeInUp">
+                                A DATA<span>-</span>DRIVEN <br>
+                                SUBSCRIPTION <br>CANNABIS <span>BOX</span>.
+                            </h1> </div>
+                            <div class="slide cycle-slide cycle-slide-active" style="position: absolute; top: 0px; left: 0px; z-index: 98; visibility: visible; opacity: 1; display: block;"> <h1 class="animated fadeInUp">RECEIVE EDIBLES <br>EVERY MONTH <span> &amp; </span>  DISCOVER<br> THE PERFECT PRODUCT.</h1> 
+                            </div>
+                        </div>
+
+                        <p class="animated fadeInUp" style="opacity: 1;">CHECK OUT YOUR REWARDS BELOW
+                        </p>
+                        <div class="arrow-wrap go-down animated fadeInUp active" style="opacity: 1;"> 
+                            <div class="open-overlay down-button"> 
+                                <svg class="arrows">
+                                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="overlay" class="fade-In"> 
+        <section class="overlay-1 slide-from-bottom"> 
+        <div class="hero">
+            <div class="page-content clearfix">
+                <div class="mammoth">
+        <!--             <span class="need brandon border-all">your perfect edible, <a href="/preference" class="red">Here</a>.</span> -->
+
+                </div>
+                <div class="share-wrap">
+                    <p class="why brandon">Don't leave your friends behind</p>
+                    <p class="title brandon">INVITE FRIENDS &<br>Earn Product</p>
+                    <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn awesome goods for<br>each friend who signs up.</p>
+                    <div class="copy-link black brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
+                    <% twitter_message = "#Marijuana is Changing. @gtHighStandards is finding your perfect edible." %>
+                    <% facebook_message = "#Marijuana is Changing. High Standards is finding your Perfect edible." %>
+                    <div class="social-links">
+                        <div class="fb-share-button" data-href="http://gethighstandards.com/?ref=<%= @user.referral_code %>" data-layout="icon"></div>
+                        <div class="sep"></div>
+                        <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
+                    </div>
+                </div>
             </div>
         </div>
 
         <% 
-            words = ''
-            if referrals_count == 1
-                words = 'friend has'
-            elsif 
-                words = 'friends have'
-            end
+            referrals_count = @user.referrals.count
 
-        %>
+            stops = User::REFERRAL_STEPS
 
-        <% if referrals_count == 0 %>
-            <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
-        <% else %>
-            <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
-        <% end %>
-        <p class="check brandon">Keep checking</p>
+            found = nil
 
-        <p class="ship brandon">We ship to certain States</p>        
-        <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>
+            stops.reverse_each { |stop|
+                if stop["count"] <= referrals_count and !found
+                    stop["selected"] = true
+                    found = stop
+                else
+                    stop["selected"] = false
+                end
+            }   
+         %>
+        <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
+            <div class="page-content">
+                <p class="callout brandon">Here's How It Works:</p>
+                <ul class="products clearfix">
+                    <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">High Standards Product</p></li>
+                    <% stops.each do |stop| %>
+                        <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
+                            <div class="circle"><%= stop["count"] %></div>
+                            <div class="sep"></div>
+                            <p><%= stop["html"].html_safe %></p>
+
+                            <div class="tooltip">
+                                <img src="<%= stop["image"] %>" height="254">
+                            </div>
+                        </li>
+                    <% end %>
+                </ul>
+
+                <div class="progress">
+                    <div class="mover">
+                        <div class="bar clearfix"></div>
+                    </div>
+                </div>
+
+                <% 
+                    words = ''
+                    if referrals_count == 1
+                        words = 'friend has'
+                    elsif 
+                        words = 'friends have'
+                    end
+
+                %>
+
+                <% if referrals_count == 0 %>
+                    <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
+                <% else %>
+                    <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
+                <% end %>
+                <p class="check brandon">Keep checking</p>
+                <p class="ship brandon">We ship to certain States</p>        
+                <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>
+            </div>
+        </div>
+        </section> 
+        <section class="overlay-2 slide-from-bottom"> 
+            <div id="contact" class="content"> 
+                <div class="container-mid"> 
+                    <div class="container"> 
+                        <h1>Contact</h1> 
+                        <p> 
+                            Want to say hello? Want to know more about us? Drop us an email and we will get back to you as soon as we can. 
+                        </p>
+                        <form action="assets/sendmail.php" method="post" class="contact-form"> 
+                            <div class="control-group"> 
+                                <label for="name" class="nameLabel">Name</label> 
+                                <input id="name" type="text" name="name" class="form-control"> 
+                            </div>
+                            <div class="control-group"> 
+                                <label for="email" class="emailLabel">Email</label> 
+                                <input id="email" type="text" name="email" class="form-control"> 
+                            </div>
+                            <div class="control-group"> 
+                                <label for="message" class="messageLabel">Message</label> 
+                                <textarea id="message" name="message" class="form-control">
+                                </textarea> 
+                            </div>
+                            <div class="control-group"> 
+                                <button type="submit" class="form-control"> 
+                                    <i class="ti-arrow-right first"></i> <i class="ti-arrow-right second"></i>
+                                </button> 
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </section> 
     </div>
+        <div class="up-button go-up">
+            <svg style="position: absolute; width: 60; height: 72;" width="60" height="72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+            <symbol id="icon-arrow-up2" viewBox="0 0 1024 1024">
+            <title>arrow-up2</title>
+            <path class="path1" d="M877.254 402.746l-320-320c-24.992-24.994-65.514-24.994-90.508 0l-320 320c-24.994 24.994-24.994 65.516 0 90.51 24.994 24.996 65.516 24.996 90.51 0l210.744-210.746v613.49c0 35.346 28.654 64 64 64s64-28.654 64-64v-613.49l210.746 210.746c12.496 12.496 28.876 18.744 45.254 18.744s32.758-6.248 45.254-18.746c24.994-24.994 24.994-65.514 0-90.508z"></path>
+            </symbol>
+            </defs>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/assets/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/assets/plugins.js"></script> 
 </div>

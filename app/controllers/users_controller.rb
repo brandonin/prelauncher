@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
     before_filter :skip_first_page, :only => :new
+    before_action :check_age
 
     def new
         @bodyId = 'home'
@@ -9,6 +10,12 @@ class UsersController < ApplicationController
 
         respond_to do |format|
             format.html # new.html.erb
+        end
+    end
+    
+    def check_age
+        if cookies[:age_verification] != "agree"
+            redirect_to "/verify_age"
         end
     end
 
@@ -106,5 +113,6 @@ class UsersController < ApplicationController
             end
         end
     end
+
 
 end

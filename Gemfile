@@ -16,6 +16,7 @@ group :assets do
   gem 'uglifier'
 end
 
+
 # group :development do
 #   gem 'pry'
 #   gem 'sqlite3'
