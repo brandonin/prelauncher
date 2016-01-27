@@ -38,8 +38,10 @@ body {
 #aqua-stroke path{
 	stroke: #1fb8b2!important;
 }
-.arrows path {
+.white-stroke path{
 	stroke: white;
+}
+.arrows path {
 	fill: transparent;
 	stroke-width: 5px;	
 	animation: arrow 2s infinite;
