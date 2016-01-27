@@ -34,14 +34,12 @@ body {
 	bottom: 0px;
 }
 
-	
-#aqua-stroke path{
-	stroke: #1fb8b2!important;
-}
+
 .white-stroke path{
-	stroke: white;
+	stroke: white!important;
 }
 .arrows path {
+	stroke: #1fb8b2;
 	fill: transparent;
 	stroke-width: 5px;	
 	animation: arrow 2s infinite;
