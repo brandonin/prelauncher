@@ -73,21 +73,6 @@ body {
 80% {opacity:0}
 100% {opacity:0}
 }
-@keyframes arrow2
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
-}
-
-@-webkit-keyframes arrow2 /*Safari and Chrome*/
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
-}
 
 .arrows path.a1 {
 	animation-delay:-1s;
