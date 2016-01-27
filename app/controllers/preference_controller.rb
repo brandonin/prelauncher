@@ -3,8 +3,13 @@ class PreferenceController < ApplicationController
   def new
   end
   def create
-  	Preference.create(preference_params)
-    redirect_to "/complete"
+    if params[:preference]
+    	Preference.create(preference_params)
+      redirect_to "/complete"
+    else
+      flash[:notice] = "please choose your preferences";
+      redirect_to "/preference"
+    end
   end
   def complete
 
