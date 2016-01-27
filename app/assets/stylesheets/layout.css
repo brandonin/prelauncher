@@ -41,6 +41,22 @@ body {
 	animation: arrow 2s infinite;
 	-webkit-animation: arrow 2s infinite; 
 }
+.arrows2 {
+	width: 60px;
+	height: 72px; 	
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	/*bottom: 0px;*/
+	cursor: pointer;
+}
+.arrows2 path {
+	stroke: #1fb8b2;
+	fill: transparent;
+	stroke-width: 5px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
 
 @keyframes arrow
 {
@@ -82,3 +98,18 @@ body {
 	bottom: 0px;
 	position: absolute;
 }
+.arrows2 path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows2 path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows2 path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
