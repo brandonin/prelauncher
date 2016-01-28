@@ -14,7 +14,7 @@
         <p class="again brandon">Thank You Again!</p>
     <% else %>
         <div class="key"></div>
-        <p class="byline brandon">Be the first to open it & get free glass</p>
+        <p class="byline brandon">Be the first to open it.</p>
         <p id="notice"><%= notice %></p>
         <%= form_for @user, :url => { :action => "create" } do |f| %>
             <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
