@@ -119,9 +119,14 @@ html.home{
 }
 .header-text{
 	color:#EBDCB2!important;
+	text-shadow: 1px 1px 1px #000;
+
 }
 .paragraph-text{
 	color:#F7EFE2!important;
+    text-shadow: 1px 1px 1px #000;
+
+
 }
 
 #notice{
@@ -178,6 +183,8 @@ html.home{
 
 #home .form-wrap .byline{
 	font-size: 15px;
+	text-shadow: 1px 1px 1px #000;
+
 	text-transform: uppercase;
 	color:#EBDCB2!important;
 	text-align: center;
