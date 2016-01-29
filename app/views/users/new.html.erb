@@ -2,7 +2,7 @@
 
 <div class="hero">
     <p class="large header-text brandon">High Standards have arrived</p>
-    <p class="small brandon paragraph-text">A personalized Marijuana edible subscription just for you.</p>
+    <p class="small brandon paragraph-text">A subscription-based Medical Marijuana Box personalized For you.</p>
     <img class="box-image"src="<%= ActionController::Base.helpers.asset_path("home/box.png") %>">
 </div>
 
@@ -14,7 +14,7 @@
         <p class="again brandon">Thank You Again!</p>
     <% else %>
         <div class="key"></div>
-        <p class="byline brandon">Be the first to open it.</p>
+        <p class="byline brandon">Be the first to see how it works.</p>
         <p id="notice"><%= notice %></p>
         <%= form_for @user, :url => { :action => "create" } do |f| %>
             <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
