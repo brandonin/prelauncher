@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
     protect_from_forgery
 
     before_filter :ref_to_cookie
-    before_filter :check_age
+    # before_filter :check_age
 
     def mobile_device?
         if session[:mobile_param]
