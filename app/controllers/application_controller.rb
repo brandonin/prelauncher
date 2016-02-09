@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
     protect_from_forgery
 
     before_filter :ref_to_cookie
-    # before_filter :check_age
+    before_filter :check_age
 
     def mobile_device?
         if session[:mobile_param]
@@ -14,11 +14,11 @@ class ApplicationController < ActionController::Base
 
     protected
 
-    # def check_age
-    #     if cookies[:age_verification] != "agree"
-    #         redirect_to "/verify_age"
-    #     end
-    # end
+    def check_age
+        if cookies[:age_verification] != "agree"
+            redirect_to "/verify_age"
+        end
+    end
 
     def ref_to_cookie
         if params[:ref] && !Rails.application.config.ended
