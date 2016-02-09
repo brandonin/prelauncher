@@ -14,11 +14,11 @@ class ApplicationController < ActionController::Base
 
     protected
 
-    def check_age
-        if cookies[:age_verification] != "agree"
-            redirect_to "/verify_age"
-        end
-    end
+    # def check_age
+    #     if cookies[:age_verification] != "agree"
+    #         redirect_to "/verify_age"
+    #     end
+    # end
 
     def ref_to_cookie
         if params[:ref] && !Rails.application.config.ended
